@@ -63,6 +63,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background: var(--color-gray-1);
+            color:  var(--color-dark-text);
         }
         h1,h2,h3,h4,h5,h6{
             font-family: var(--font-headings);
@@ -75,9 +76,8 @@
 
         }
         .main-header-container {
-            background-color: var(--color-primary-dark);
-            border-bottom: 1px solid #e0e0e0;
-            padding: 1rem 0;
+            background: var(--color-primary-dark);
+           
         }
         .main-logo{
             font-size: 4rem;
@@ -158,8 +158,35 @@
         }
         .recipe-list-item:hover{
             transform: scale(1.05);
+            box-shadow: -10px 10px 20px rgba(0,0,0,.3);
+        }
+
+        .recipe-title-container{
+            padding: var(--spacing-gutter-medium);
+            padding-bottom: 2rem;
         }
       
+        .recipe-author{
+            padding: 0 var(--spacing-gutter-medium);
+        }
+
+        .recipe-conten{
+            padding: var(--spacing-gutter-medium);
+            padding-top: 2rem;
+        }
+
+        .recipe-author-item{
+            color: var(--color-gray-4);
+            margin-right: 1rem;
+        }
+
+        .recipe-author a {
+            color: var(--color-primary);
+        }
+
+        .recipe-author a:hover {
+            color: var(--color-primary-dark)
+        }
 
     </style>
 </head>
